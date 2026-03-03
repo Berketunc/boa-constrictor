@@ -4,12 +4,12 @@ compression:
 dataloader:
   batch_size: 5
   seq_len: 10000
-device: cuda
+device: cpu
 file_path: CMS_DATA_float32.bin
 model:
   d_model: 256
   num_layers: 1
-model_path: cms_experiment_final_model_fp32.pt
+#model_path: cms_experiment_final_model_fp32.pt
 name: cms_experiment
 precision: fp32
 progress: true
@@ -18,5 +18,5 @@ splits:
 - 0.1
 - 0.1
 training:
-  epochs: 10
+  epochs: 1
   lr: 5e-4
